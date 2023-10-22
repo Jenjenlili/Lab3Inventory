@@ -71,7 +71,7 @@ namespace Lab3Inventory
         {
             if (!Regex.IsMatch(price.ToString(), @"^(\d*\.)?\d+$"))
             {
-                throw new CurrencyFormatException("Invalide Price Format!");
+                throw new CurrencyFormatException("Invalid Price Format!");
             }
             return Convert.ToDouble(price);
         }
